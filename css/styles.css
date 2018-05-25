@@ -1,0 +1,45 @@
+.marquee {
+    background-image: url(circuit.jpg);
+    width: auto;
+    height: 20px;
+    -webkit-animation: marquee 50s infinite linear;
+    outline:0px solid black;
+    opacity: 0.2;
+    -ms-scroll-limit:1;
+  }
+
+  .marqueeright {
+    background-image: url(circuit.jpg);
+    width: auto;
+    height: 20px;
+    -webkit-animation: marquee 35s infinite linear;
+    outline:0px solid black;
+    opacity: 0.3;
+    -ms-scroll-limit:1;
+    marquee-direction: right;
+  }
+
+  .images{
+    align-items: stretch;
+    display: inline;
+    position: relative;
+  }
+
+
+  .jumbotron {
+    margin: 2px
+  }
+
+  .panel-heading{
+    color:black;
+  }
+  
+  @-webkit-keyframes marquee {
+    0% {
+      background-position: 1000px;
+    }
+  
+    100% {
+      background-position: -1190px;
+    }
+  }

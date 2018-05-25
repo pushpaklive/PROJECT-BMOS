@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<title>BMOS TECH</title>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <a class="btn btn-success" type="button" style="align-content: center" href="index.html">&lt;Back</a>
+        <br>
+    
+    <div id="map" style="background-color: black;height: 600px; width: 400px;"></div>
+</div>
+    <script>
+        function myMap() {
+            var mapOptions = {
+                center: new google.maps.LatLng(21.459801, 80.195000),
+                zoom: 10,
+                mapTypeId: google.maps.MapTypeId.HYBRID
+            }
+            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkejIAqsoABCon05xFZzpJdiCq3wmizsI&callback=myMap">
+    </script>
+
+</body>
+
+</html>
